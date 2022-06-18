@@ -420,7 +420,7 @@ li {
     filter: brightness(80%);
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 800px) {
     .menuBar_wrap {
         position: fixed;
         width: 100%;
@@ -808,4 +808,3 @@ li {
     }
         
 }
-
