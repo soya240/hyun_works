@@ -1,0 +1,422 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: 'NanumSquare';
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* 메뉴바 간격 설정 */
+.menuBar_wrap {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* background-color: #222; */
+    /* border-radius: 50px; */
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.menuBar{
+    overflow: auto;
+    margin-right: 50px;
+}
+
+.menuBar a{
+    color: #000;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    display: inline-block;
+}
+
+.menuBar a:hover{
+    color: #7eb2ff;
+    transition: all, 0.2s;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+/* 메인 워드 및 설명 */
+
+.mainThink_wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-think {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.think-dpp {
+    font-size: 25px;
+    letter-spacing: 8.5px;
+    font-family: 'NanumSquareExtraBold';
+    margin: 20px;
+}
+
+.think-word {
+    font-size: 85px;
+    font-family: 'NanumSquareExtraBold';
+}
+
+.think-reso {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.think-dsc {
+    font-size: 15px;
+    font-weight: 100;
+    opacity: 70%;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+/* About 페이지 css 코드 =========================================== */
+
+/* 프로젝트 탭 */
+.featuredProject {
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.sectionTitle {
+    margin: 50px;
+}
+
+.mainTitle {
+    font-size: 50px;
+}
+
+.subTitle {
+    font-size: 20px;
+}
+
+.projectWindow_gr {
+    display: flex;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+.projectWindow {
+    background-color: gray;
+    position: relative;
+    width: 160px;
+    height: 400px;
+    margin-right: 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.projectWindow_title {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'NanumSquareExtraBold';
+    line-height: 30px;
+    margin-top: 30px;
+    z-index: 30;
+}
+
+.projectWindow > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.projectWindow_dark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#000,#fff,#fff);
+    mix-blend-mode: multiply;
+    opacity: 30%;
+    object-fit: fill;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.moveBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.moveBtn_order {
+    width: 10px;
+    height: 10px;
+    background-color: #777;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+
+
+
+/* 여기서 부터 액티비티 탭 */
+
+.activity_Award {
+    width: 1000px;
+    margin-top: 50px;
+}
+
+.award_gr {
+    display: flex;
+    align-items: center;
+}
+
+.awardBg {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    background-color: #777;
+    border-radius: 200px;
+    z-index: 0;
+}
+
+.awardDescription {
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    color: #fff;
+    margin-left: 170px;
+    /* background-color: lightblue; */
+}
+
+.awardInfo {
+    z-index: 10;
+}
+
+.awardName {
+    font-size: 40px;
+    margin-bottom: 20px;  
+}
+
+.awardDate {
+    font-size: 12px;
+    font-family: 'NanumSquareLight';
+    opacity: 0.5;
+}
+
+.awardParagraph {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.award_prizeImage {
+    position: absolute;
+    width: 480px;
+    height: 600px;
+    margin-left: 320px;
+    transform: translate(0px, -250px);
+}
+
+.awardList {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0px, 70px);
+}
+
+.awardList_bg {
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    background-color: #ececec;
+    border-radius: 10px;
+}
+
+.awardList_content {
+    position: absolute;
+}
+
+.awardList_content_row {
+    margin: 10px;
+}
+
+.awardList_content_row td {
+    color: #3a3a3a;
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/* 여기서 부턴 스킬 탭 */
+
+.skill {
+    width: 1000px;
+    margin-top: 250px;
+}
+
+.skillCard_wrap {
+    display: flex;
+    margin: 50px;
+}
+.skillCard {
+    position: relative;
+    width: 416px;
+    height: 460px;
+    background-color: #cecece;
+    margin-right: 10px;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: #d6d6d6 0px 4px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.skillCard_info_bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 1;
+}
+
+.skillCard_info_title {
+    font-size: 20px;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+.skillCard_info_paragraph {
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 0px;
+    color: #787878;
+    z-index: 1
+}
+
+.skillCard_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* 여기서 부턴 생각 탭 */
+
+.iThink {
+    width: 1000px;
+    margin-top: 80px;
+}
+
+.thinkThumb {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+} 
+
+.thinkThumb_wrap {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.thinkThumb_image_wrap {
+    width: 320px;
+    height: 200px;
+    border-radius: 110px 110px 110px 8px;
+    background-color: #cecece;
+}
+
+/* 여기서 부턴 이메일 컨택 탭 */
+
+.contact {
+    width: 1000px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_title {
+    font-size: 30px;
+    color: #cecece;
+}
+
+.contact_email {
+    font-size: 50px;
+    margin: 250px;
+    margin-bottom: 300px;
+}
+
+
+/* 여긴 WORKS 페이지 =============================================== */
+
+.works_menuWrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.works_menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100vh;
+}
+
+.works_menuTitle {
+    font-family: 'NanumSquareExtraBold';
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    z-index: 10;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.works_menuImage {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(80%);
+}
+
