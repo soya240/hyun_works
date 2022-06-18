@@ -420,3 +420,392 @@ li {
     filter: brightness(80%);
 }
 
+@media only screen and (max-width: 550px) {
+    .menuBar_wrap {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.8;
+        z-index: 100;
+    }
+    
+    .menuBar{
+        overflow: auto;
+        margin-right: 0px;
+    }
+    
+    .menuBar a{
+        color: #000;
+        padding: 20px;
+        margin: 0px;
+        font-size: 12px;
+        font-weight: 100;
+        display: inline-block;
+    }
+    
+    .menuBar a:hover{
+        color: #7eb2ff;
+        transition: all, 0.2s;
+    }
+    
+    li {
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+    }
+
+    /* 여긴 메인 페이지 설정 */
+    
+    .mainThink_wrap {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-think {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .think-dpp {
+        font-size: 15px;
+        letter-spacing: 4px;
+        font-family: 'NanumSquareExtraBold';
+        /* margin: 20px; */
+        /* margin-top: 50px; */
+    }
+    
+    .think-word {
+        font-size: 50px;
+        font-family: 'NanumSquareExtraBold';
+    }
+    
+    .think-reso {
+        font-size: 12px;
+        font-weight: 700;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .think-dsc {
+        font-size: 12px;
+        font-weight: 100;
+        opacity: 70%;
+        letter-spacing: 2px;
+        line-height: 2;
+    }
+
+    /* About 페이지 css 코드 =========================================== */
+
+    /* 프로젝트 탭 */
+    .featuredProject {
+        width: 350px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .sectionTitle {
+        margin: 50px;
+    }
+
+    .mainTitle {
+        font-size: 30px;
+    }
+
+    .subTitle {
+        font-size: 12px;
+    }
+
+    .projectWindow_gr {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        margin-bottom: 0px;
+    }
+
+    .projectWindow {
+        background-color: gray;
+        position: relative;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+
+    .projectWindow_title {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        font-size: 15px;
+        font-family: 'NanumSquareExtraBold';
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        z-index: 30;
+    }
+
+    .projectWindow > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        filter: brightness(90%);
+    }
+
+    .projectWindow_dark {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(#000,#fff,#fff);
+        mix-blend-mode: multiply;
+        opacity: 30%;
+        object-fit: fill;
+        border-radius: 5px;
+        z-index: 10;
+    }
+
+    .moveBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .moveBtn_order {
+        width: 10px;
+        height: 10px;
+        background-color: #777;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+
+
+
+
+    /* 여기서 부터 액티비티 탭 */
+
+    .activity_Award {
+        width: 350px;
+        margin-top: 50px;
+    }
+
+    .award_gr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .awardBg {
+        /* position: relative; */
+        width: 250px;
+        height: 500px;
+        background-color: #777;
+        border-radius: 200px;
+        z-index: 0;
+    }
+
+    .awardDescription {
+        position: absolute;
+        display: flex;
+        z-index: 10;
+        color: #fff;
+        margin-left: 0px;
+        margin-top: 150px;
+    }
+
+    .awardInfo {
+        z-index: 10;
+    }
+
+    .awardName {
+        font-size: 24px;
+        margin-bottom: 20px;  
+    }
+
+    .awardDate {
+        font-size: 12px;
+        font-family: 'NanumSquareLight';
+        opacity: 0.5;
+    }
+
+    .awardParagraph {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .award_prizeImage {
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        margin-left: 0px;
+        transform: translate(0px, -250px);
+    }
+
+    .awardList {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0px, 70px);
+    }
+
+    .awardList_bg {
+        position: absolute;
+        width: 90%;
+        height: 150px;
+        background-color: #ececec;
+        border-radius: 5px;
+    }
+
+    .awardList_content {
+        position: absolute;
+    }
+
+    .awardList_content_row {
+        margin: 10px;
+    }
+
+    .awardList_content_row td {
+        font-size: 12px;
+        width: 80px;
+        color: #3a3a3a;
+        padding: 5px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    /* 여기서 부턴 스킬 탭 */
+
+    .skill {
+        width: 350px;
+        margin-top: 250px;
+    }
+
+    .skillCard_wrap {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+    .skillCard {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-color: #cecece;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        z-index: 1;
+        box-shadow: #d6d6d6 0px 4px 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .skillCard_info_bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        border-radius: 0px 0px 20px 20px;
+        z-index: 1;
+    }
+
+    .skillCard_info_title {
+        font-size: 15px;
+        margin-top: 30px;
+        z-index: 1;
+    }
+
+    .skillCard_info_paragraph {
+        font-size: 12px;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 0px;
+        color: #787878;
+        z-index: 1
+    }
+
+    .skillCard_image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /* 여기서 부턴 생각 탭 */
+
+    .iThink {
+        width: 350px;
+        margin-top: 80px;
+    }
+
+    .thinkThumb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px;
+        margin-top: 50px;
+    } 
+
+    .thinkThumb_wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .thinkThumb_title {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .thinkThumb_image_wrap {
+        width: 100%;
+        height: 180px;
+        border-radius: 110px 110px 110px 8px;
+        background-color: #cecece;
+    }
+
+    /* 여기서 부턴 이메일 컨택 탭 */
+
+    .contact {
+        width: 350px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_title {
+        font-size: 18px;
+        color: #cecece;
+    }
+
+    .contact_email {
+        font-size: 24px;
+        margin: 250px;
+        margin-bottom: 300px;
+    }
+        
+}
+
